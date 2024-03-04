@@ -1,8 +1,8 @@
 #  [@属性名='属性值']
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.edge.service import Service
 from selenium.webdriver.common.by import By
-wd = webdriver.Chrome(service=Service())
+wd = webdriver.Edge(service=Service())
 wd.get('https://cdn2.byhy.net/files/selenium/test1.html')
 elements = wd.find_elements(By.XPATH, '//select[@class="multi_choice"]')
 for element in elements:
